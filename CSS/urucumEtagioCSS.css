@@ -1,0 +1,426 @@
+@import "urucumCSS.css";
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;    
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imgfundo {
+  height: 100%;
+  width: 95%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  background-image: url(../IMGS/mapaGames.png);
+}
+
+#imagemJogo{
+  height: 700px;
+  width: 900px;
+  position: absolute;
+  left: 210px;
+}
+
+
+.monstro_parado{
+  background-image: url('../IMGS/Inimigo_Urucum/parado_baixo.png');
+}
+.monstro_baixo{
+  background-image: url('../IMGS/Inimigo_Urucum/andando_baixo.gif');
+}
+.monstro_cima{
+  background-image: url('../IMGS/Inimigo_Urucum/andando_cima.gif');
+}
+.monstro_esquerda{
+  background-image: url('../IMGS/Inimigo_Urucum/andando_esquerda.gif');
+}
+.monstro_direita{
+  background-image: url('../IMGS/Inimigo_Urucum/andando_direita.gif');
+}
+
+.movePadEnemy{
+  width: 65px;
+  height: 65px;
+
+  position: absolute;
+
+}
+#movePad1{
+  top: -4%;
+  right: 25%;
+}
+#movePad2{
+  top: -4%;
+  right: 48%;
+  width: 7%;
+}
+#movePad3{
+  top: -3.5%;
+  left: 23%;
+  width: 55px;
+}
+#movePad4{
+  top: 35%;
+  left: 29%;
+  width: 70px;
+}
+#movePad5{
+  top: 35%;
+  right: 43.5%;
+  width: 7%;
+}
+#movePad6{
+  top: 32%;
+  right: 21.5%;
+}
+#movePad7{
+  top: -1%;
+  left: 3%;
+  width: 70px;
+}
+#movePad8{
+  top: 36%;
+  left: 6%;
+  width: 70px;
+}
+
+.vidas {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  background-color: coral;
+
+  border-radius: 5px;
+
+  z-index: 3;
+}
+
+.tiro{
+  width: 10px;
+  height: 10px;
+
+  background: url(../IMGS/tiro.gif  );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+
+  left: 620px;
+  top: 210px;
+}
+
+.inimigo {
+  
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  top: 100px;
+  border-radius: 50px;
+}
+
+.urucum {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+
+  top: 564px;
+  left: 32px;
+}
+
+.vida_0{
+  width: 160px;
+  height: 30px;
+
+  background: url(../IMGS/Vida/vida_0.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.vida_1{
+  width: 160px;
+  height: 30px;
+
+  background: url(../IMGS/Vida/vida_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.vida_2{
+  width: 160px;
+  height: 30px;
+
+  background: url(../IMGS/Vida/vida_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.vida_3{
+  width: 160px;
+  height: 30px;
+ 
+  background: url(../IMGS/Vida/vida_3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vidas_inimigo{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  background-color: coral;
+
+  border-radius: 5px;
+}
+.vida_inimigo0{
+  width: 160px;
+  height: 30px;
+
+  background: url(../IMGS/Inimigo_Vida/vida_inimigo0.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.vida_inimigo1{
+  width: 160px;
+  height: 30px;
+
+  background: url(../IMGS/Inimigo_Vida/vida_inimigo1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.vida_inimigo2{
+  width: 160px;
+  height: 30px;
+
+  background: url(../IMGS/Inimigo_Vida/vida_inimigo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.vida_inimigo3{
+  width: 160px;
+  height: 30px;
+ 
+  background: url(../IMGS/Inimigo_Vida/vida_inimigo3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parede1{
+  position: absolute;
+
+  left: 0;
+  bottom: 21.5%;
+
+  width: 42.4%;
+  height: 5%;
+
+}
+.parede1-5{
+  position: absolute;
+
+  left: 0;
+  bottom: 39%;
+
+  width: 42.4%;
+  height: 5%;
+
+}
+.parede2{
+  position: absolute;
+
+  left: 41.7%;
+  bottom: 22.8%;
+
+  width: 1%;
+  height: 20%;
+
+}
+.parede6{
+  position: absolute;
+
+  right: 0;
+  bottom: 22.5%;
+
+  width: 45.4%;
+  height: 5%;
+
+}
+.parede6-5{
+  position: absolute;
+
+  right: 0;
+  bottom: 39%;
+
+  width: 45.4%;
+  height: 5%;
+
+}
+.parede7{
+  position: absolute;
+
+  left: 54.3%;
+  bottom: 22.8%;
+
+  width: 1%;
+  height: 20%;
+
+}
+
+.cantoPreto{
+  position: absolute;
+}
+#cantoPretoEsquerda{
+  width: 3%;
+  height: 100%;
+  left: -3%;
+
+}
+#cantoPretoDireita{
+  width: 3%;
+  height: 100%;
+  right: -3%;
+
+}
+#cantoPretoCima{
+  width: 100%;
+  height: 3%;
+  top: -1%;
+
+}
+#cantoPretoBaixo{
+  width: 100%;
+  height: 3%;
+  bottom: -2%;
+
+}
+
+.spawnPoint {
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+}
+
+#spawnpoint1{
+  right: 38%;
+  top: 5%;
+}
+#spawnpoint2{
+  right: 62%;
+  top: 5%;
+}
+#spawnpoint3{
+  left: 17%;
+  top: 5%;
+}
+#spawnpoint4{
+  right: 27%;
+  top: 20%;
+}
+#spawnpoint5{
+  right: 50%;
+  top: 19%;
+}
+#spawnpoint6{
+  left: 27%;
+  top: 19%;
+}
+#spawnpoint7{
+  left: 8%;
+  top: 19%;
+}
+#spawnpoint8{
+  left: 17%;
+  top: 32%;
+}
+#spawnpoint9{
+  right: 62%;
+  top: 33%;
+}
+#spawnpoint10{
+  right: 38%;
+  top: 33%;
+}
+
+.mensagem{
+  font-size: 25px;
+  width: 400px;
+  height: 180px;
+  background-color: rgb(8, 191, 191);
+  padding: 30px;
+  border-radius: 30px;
+}
+
+/* nova mensagem */
+
+.mensagemContainer {
+  width: 500px;
+  height: 220px;
+
+  border: 1px solid black;
+
+  font-size: large;
+
+  display: flex;
+
+  user-select: none;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.textMensagem{
+  color: white;
+  font-size: x-large;
+
+  user-select: none;
+}
+
+.ladoEsquerdoMsgContainer{
+  height: 100%;
+  width: 31%;
+
+
+  user-select: none;
+}
+.ladoDireitoMsgContainer{
+  height: 90%;
+  width: 69%;
+
+  user-select: none;
+
+  overflow-wrap: break-word;
+  text-overflow: clip;
+
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.backgroundMensagemUrucum {
+  background: url(../IMGS/caixa_de_dialogo_urucum.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.backgroundMensagemCaronte {
+  background: url(../IMGS/caixa_de_dialogo_caronte.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hiddenMessage {
+  display: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/indexCSS.css">
+    <title>Tela Inicial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./IMGS/icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="pai">
+        <div id="textoSuperior">
+            <div id="titulo">
+                <p id="tituloP">Terapeutica</p>
+            </div>
+            <p id="demo">Pre-Alpha</p>
+        </div>
+
+        <a href="javascript:void(0);" id="audioButton">
+            Jogar
+            <img src="./IMGS/Urucum/sprite_andando_direita.gif" height="40%">
+        </a>
+        
+    </div>
+
+    <script>
+        // Função para reproduzir o áudio quando o botão é clicado
+        function playAudio() {
+            const audio = new Audio('./Audio/start.mp3'); // Substitua pelo caminho correto para o seu arquivo de áudio
+            audio.volume = 0.3;
+            audio.play();
+
+            // Redirecionar para a próxima página após a reprodução do áudio
+            setTimeout(function() {
+                window.location.href = "barca.html";
+            }, audio.duration * 1000); // Aguarda a duração do áudio antes de redirecionar
+        }
+
+        // Adicione um evento de clique ao botão para chamar a função playAudio
+        const audioButton = document.getElementById('audioButton');
+        audioButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            playAudio();
+        });
+    </script>
+</body>
+</html>

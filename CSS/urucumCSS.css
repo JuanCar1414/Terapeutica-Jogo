@@ -1,0 +1,61 @@
+.urucum {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+
+    left: 620px;
+    top: 210px;
+}
+
+.sprite_urucum_idle{
+    background-image: url(../IMGS/Urucum/sprite_parado_baixo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sprite_urucum_idle_cima{
+    background-image: url(../IMGS/Urucum/sprite_parado_cima.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sprite_urucum_idle_direita{
+    background-image: url(../IMGS/Urucum/sprite_parado_direita.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sprite_urucum_idle_esquerda{
+    background-image: url(../IMGS/Urucum/sprite_parado_esquerda.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.sprite_urucum_andando_esquerda{
+    background-image: url(../IMGS/Urucum/sprite_andando_esquerda.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sprite_urucum_andando_direita{
+    background-image: url(../IMGS/Urucum/sprite_andando_direita.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sprite_urucum_andando_cima{
+    background-image: url(../IMGS/Urucum/sprite_andando_cima.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sprite_urucum_andando_baixo{
+    background-image: url(../IMGS/Urucum/sprite_andando_baixo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
